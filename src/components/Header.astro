@@ -1,0 +1,27 @@
+---
+import { Image } from '@astrojs/image/components';
+import Navigation from './Navigation.astro';
+import menuData from '../data/menu.json';
+---
+
+<header class="bg-white shadow-sm">
+  <div class="container mx-auto py-4 px-6 flex justify-between items-center">
+    <a href="/" class="flex items-center gap-2">
+      <Image 
+        src="/images/logo.svg" 
+        alt="Logo de Mi Institución" 
+        width={180} 
+        height={50} 
+      />
+    </a>
+    
+    <Navigation items={menuData.mainMenu} />
+    
+    <div class="flex items-center gap-4">
+      <a href="/buscar" aria-label="Buscar" class="text-gray-600 hover:text-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      </a>
+      <a href="/contacto" class="btn btn-primary">Contacto</a>
+    </div>
+  </div>
+</header>
