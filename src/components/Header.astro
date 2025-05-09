@@ -1,11 +1,16 @@
 ---
-import { Image } from '@astrojs/image/components';
-import Navigation from './Navigation.astro';
-import menuData from '../data/menu.json';
+// import { Image } from '@astrojs/image/components';
+// import Navigation from './Navigation.astro';
+// import menuData from '../data/menu.json';
 ---
 
-<header class="bg-white shadow-sm">
-  <div class="container mx-auto py-4 px-6 flex justify-between items-center">
+<header class="fixed top-0 z-50 h-20 w-full select-none p-2">
+
+  <nav class="flex items-center rounded-[14px]">
+    navbar
+  </nav>
+
+  <!-- <div class="container mx-auto py-4 px-6 flex justify-between items-center">
     <a href="/" class="flex items-center gap-2">
       <Image 
         src="/images/logo.svg" 
@@ -23,5 +28,16 @@ import menuData from '../data/menu.json';
       </a>
       <a href="/contacto" class="btn btn-primary">Contacto</a>
     </div>
-  </div>
+  </div> -->
 </header>
+
+
+
+<!-- <style>
+  header {
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    width: 100%;
+  }
+</style> -->
