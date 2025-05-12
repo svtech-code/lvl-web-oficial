@@ -2,11 +2,17 @@
 
 html, body {
     position: relative;
+    transition: background-color 1000ms;
+    /* background: linear-gradient(180deg, #003aa7, #01758f); */
     margin: 0;
     padding: 0;
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-rows: 1fr auto;
-    background-color: rgb(29, 143, 219);
+    background-color: rgb(24, 113, 173);
+    /* background: #003fbd; */
+    /* background: linear-gradient(201deg,rgba(0, 63, 189, 1) 0%, rgba(9, 44, 121, 1) 50%, rgba(0, 212, 255, 1) 100%); */
+    /* background: radial-gradient(circle,rgba(0, 33, 153, 1) 0%, rgba(9, 82, 121, 1) 61%, rgba(0, 212, 255, 1) 100%); */
+    /* background-repeat: no-repeat; */
 }
