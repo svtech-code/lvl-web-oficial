@@ -1,6 +1,16 @@
 ---
 ---
 
-<footer>
-    <p>footer</p>
+<footer class="relative min-h-[600px] w-full flex flex-col">
+    <div class="absolute opacity-80 inset-0 bg-[url('/images/footer.webp')] bg-cover bg-bottom [mask-image:linear-gradient(transparent,black_60%)]"></div>
+    <div class="absolute bg-black w-full h-full opacity-60 [mask-image:linear-gradient(transparent,black_90%)]"></div>
+
+    <div class="flex-1"></div>
+
+    <div class="pb-2 opacity-90">
+      <p class="text-center text-xs font-bold text-white">
+        Copyright &copy; {new Date().getFullYear()} Liceo Bicentenario Valentín Letelier Madariaga<br />Todos los derechos reservados.
+      </p>
+    </div>
+  </div>
 </footer>

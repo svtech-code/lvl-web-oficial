@@ -1,43 +1,25 @@
 ---
-// import { Image } from '@astrojs/image/components';
-// import Navigation from './Navigation.astro';
-// import menuData from '../data/menu.json';
+
+import LogoBanner from "assets/images/logo-banner.svg";
+import {MENU} from "consts/menu";
 ---
 
-<header class="fixed top-0 z-50 h-20 w-full select-none p-2">
+<header class="fixed top-0 z-50 h-28 w-full select-none p-2 mx-auto flex items-center justify-center backdrop-blur-2xl shadow-b">
+  
+  <nav class="w-full flex items-center max-w-[1200px]">    
+    <a href="" class="transition-transform hover:scale-[1.02] duration-300 will-change-transform">
+      <LogoBanner width={300} height={150} />
+    </a>
 
-  <nav class="flex items-center rounded-[14px]">
-    navbar
+    <div class="hidden flex-1 justify-end gap-6 lg:flex">
+      {
+        MENU.map(({name, path}) => (
+          <a href={path} class="text-white hover:text-yellow-400 font-semibold p-2 text-lg transition-transform duration-300 will-change-transform hover:scale-105 origin-center">{name}</a>
+        ))
+      }
+    </div>
   </nav>
 
-  <!-- <div class="container mx-auto py-4 px-6 flex justify-between items-center">
-    <a href="/" class="flex items-center gap-2">
-      <Image 
-        src="/images/logo.svg" 
-        alt="Logo de Mi Institución" 
-        width={180} 
-        height={50} 
-      />
-    </a>
-    
-    <Navigation items={menuData.mainMenu} />
-    
-    <div class="flex items-center gap-4">
-      <a href="/buscar" aria-label="Buscar" class="text-gray-600 hover:text-primary">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-      </a>
-      <a href="/contacto" class="btn btn-primary">Contacto</a>
-    </div>
-  </div> -->
 </header>
 
 
-
-<!-- <style>
-  header {
-    position: fixed;
-    z-index: 50;
-    top: 0;
-    width: 100%;
-  }
-</style> -->
