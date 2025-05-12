@@ -5,23 +5,29 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@assets/*": [
+      "assets/*": [
           "src/assets/*"
       ],
-      "@layout/*": [
-          "src/layout/*"
+      "components/*": [
+          "src/components/*"
       ],
-      "@pages/*": [
+      "layouts/*": [
+          "src/layouts/*"
+      ],
+      "pages/*": [
           "src/pages/*"
       ],
-      "@sections/*": [
+      "sections/*": [
           "src/sections/*"
       ],
-      "@styles/*": [
+      "styles/*": [
           "src/styles/*"
       ],
-      "@types/*": [
+      "types/*": [
           "src/types/*"
+      ],
+      "consts/*": [
+          "src/consts/*"
       ],
     }
   }
