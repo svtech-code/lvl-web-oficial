@@ -9,6 +9,7 @@ html, body {
     width: 100vw;
     height: 100vh;
     display: grid;
+    place-items: center;
     grid-template-rows: 1fr auto;
     background-color: rgb(24, 113, 173);
     /* background: #003fbd; */
